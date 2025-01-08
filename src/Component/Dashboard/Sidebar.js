@@ -12,10 +12,10 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
 
   const menuItems = [
     { id: "analyze", name: "Analysis", icon: <TbAnalyzeFilled className="text-2xl" />, link: "/dashboard/home" },
-    { id: "services", name: "Services", icon: <FcSelfServiceKiosk className="text-2xl" />, link: "/dashboard/profile" },
-    { id: "team", name: "Teams", icon: <GiTeamUpgrade className="text-2xl" />, link: "/dashboard/settings" },
-    { id: "feedback", name: "Feedback", icon: <RiFeedbackLine className="text-2xl" />, link: "/dashboard/help" },
-    { id: "goals", name: "Career", icon: <GoGoal className="text-2xl" />, link: "/dashboard/goals" },
+    { id: "services", name: "Services", icon: <FcSelfServiceKiosk className="text-2xl" />, link: "/dashboard/services" },
+    { id: "testimonials", name: "Testimonials",  icon: <RiFeedbackLine className="text-2xl" />, link: "/dashboard/testimonials" },
+    { id: "Team", name: "TeamMember", icon: <RiFeedbackLine className="text-2xl" />, link: "/dashboard/team" },
+    { id: "goals", name: "Career", icon: <GoGoal className="text-2xl" />, link: "/dashboard/carrier" },
     { id: "portFolio", name: "Portfolio", icon: <MdSlideshow className="text-2xl" />, link: "/dashboard/portFolio" },
   ];
 

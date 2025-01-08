@@ -9,6 +9,10 @@ import Help from '../Pages/Help';
 import TopBar from './Top';
 import Portfolio from '../Pages/Portfolio';
 import ViewPortfolio from '../Pages/ViewPortfolio';
+import Service from '../Pages/Service';
+import Testimonials from '../Pages/Testimonials';
+import Carrier from '../Pages/Carrier';
+import TeamMemberForm from '../Pages/Team';
 
 const Dashboard = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -34,6 +38,10 @@ const Dashboard = () => {
             <Route path="profile" element={<Profile />} />
             <Route path="settings" element={<Settings />} />
             <Route path="help" element={<Help />} />
+            <Route path="/team" element={<TeamMemberForm/>}/>
+            <Route path="/carrier" element={<Carrier/>}/>
+            <Route path="/testimonials" element={<Testimonials/>}/>
+            <Route path="/services" element={<Service/>}/>
             <Route path="/portfolio" element={<Portfolio/>} />
             <Route path="/view-portfolio" element={<ViewPortfolio />} />
             <Route path="*" element={<Navigate to="home" />} />
