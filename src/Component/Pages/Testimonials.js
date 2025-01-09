@@ -35,7 +35,7 @@ const Testimonials = ({ isActive, onClick }) => {
       formDataToUpload.append("file", file);
 
       const { data } = await axios.post(
-        "https://admindashboardbackend-opa8.onrender.com/api/auth/upload",
+        "http://localhost:8000/api/auth/upload",
         formDataToUpload
       );
 
@@ -57,7 +57,7 @@ const Testimonials = ({ isActive, onClick }) => {
 
     try {
       await axios.post(
-        "https://admindashboardbackend-opa8.onrender.com/api/testimonials",
+        "http://localhost:8000/api/testimonial/testimonials",
         formData
       );
       toast.success("Testimonial added successfully!");
@@ -82,7 +82,7 @@ const Testimonials = ({ isActive, onClick }) => {
     <div className="w-full max-w-6xl mx-auto p-8 bg-white rounded-lg shadow-lg">
       <ToastContainer />
       <div className="flex justify-between mb-6">
-        <Link to="/dashboard/view-testimonials">
+        <Link to="/dashboard/view-testimonial">
           <button className="p-3 rounded-lg bg-green-600 text-white hover:bg-green-700 font-semibold">
             View Testimonials
           </button>

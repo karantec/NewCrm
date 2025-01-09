@@ -33,7 +33,7 @@ const Service = ({ isActive, onClick }) => {
       formDataToUpload.append("file", file);
 
       const { data } = await axios.post(
-        "https://admindashboardbackend-opa8.onrender.com/api/auth/upload",
+        "http://localhost:8000/api/auth/upload",
         formDataToUpload
       );
 
@@ -55,7 +55,7 @@ const Service = ({ isActive, onClick }) => {
 
     try {
       await axios.post(
-        "https://admindashboardbackend-opa8.onrender.com/api/interior/interiors",
+        "http://localhost:8000/api/service/services",
         formData
       );
       toast.success("Service added successfully!");
@@ -78,7 +78,7 @@ const Service = ({ isActive, onClick }) => {
     <div className="w-full max-w-6xl mx-auto p-8 bg-white rounded-lg shadow-lg">
       <ToastContainer />
       <div className="flex justify-between mb-6">
-        <Link to="/dashboard/view-service">
+        <Link to="/dashboard/view-services">
           <button className="p-3 rounded-lg bg-green-600 text-white hover:bg-green-700 font-semibold">
             View Services
           </button>
