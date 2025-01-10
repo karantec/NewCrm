@@ -11,6 +11,7 @@ const Portfolio = ({ isActive, onClick }) => {
     productName: "",
     Category: "",
     Description: "",
+    ClientName:"",
     ProductDeployedLink: "",
     ProductVideo: [],
     productImage: [],
@@ -205,8 +206,10 @@ const Portfolio = ({ isActive, onClick }) => {
               "Editing",
               "2D & 3D Modeling",
               "Animation",
+              "GamiFication"
             ])}
             {renderFormInput("Description", "Description", "Description")}
+            {renderFormInput("ClientName", "ClientName", "ClientName")}
             {renderFormInput("Product Deployed Link", "ProductDeployedLink", "Product Deployed Link")}
           </div>
         </div>

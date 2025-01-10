@@ -12,7 +12,7 @@ const Team = ({ isActive, onClick }) => {
     profilePicture: "",
     skills: "",
     technologies: "",
-    joinedAt: "",
+    
   });
 
   const [loading, setLoading] = useState(false);
@@ -202,18 +202,7 @@ const Team = ({ isActive, onClick }) => {
           </div>
         </div>
 
-        <div className="p-6 bg-gray-50 rounded-lg shadow-md">
-          <label className="block mb-2 text-sm font-bold uppercase text-gray-700">
-            Joined At
-          </label>
-          <input
-            type="date"
-            name="joinedAt"
-            value={formData.joinedAt}
-            onChange={handleInputChange}
-            className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
-          />
-        </div>
+        
 
         <button
           type="submit"

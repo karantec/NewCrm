@@ -13,6 +13,8 @@ import TeamMemberForm from '../Pages/Team';
 import ViewTestimonial from '../Pages/ViewTestimonial';
 import ViewService from '../Pages/ViewServices';
 import Team from '../Pages/Team';
+import EmployeeForm from '../Pages/Employee';
+import AssignedForm from '../Pages/AssignedProject';
 
 const Dashboard = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -41,6 +43,8 @@ const Dashboard = () => {
             <Route path="/view-testimonial" element={<ViewTestimonial />} />
             <Route path="/testimonials" element={<Testimonials/>}/>
             <Route path="/view-services" element={<ViewService/>}/>
+            <Route path="/employee" element={<EmployeeForm/>}/>
+            <Route path="/assigned" element={<AssignedForm/>}/>
             <Route path="/services" element={<Service/>}/>
             <Route path="/portfolio" element={<Portfolio/>} />
             <Route path="/view-portfolio" element={<ViewPortfolio />} />

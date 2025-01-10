@@ -7,15 +7,19 @@ import { GiTeamUpgrade } from "react-icons/gi";
 import { RiFeedbackLine } from "react-icons/ri";
 import { GoGoal } from "react-icons/go";
 import { MdSlideshow } from "react-icons/md";
+import { SlPeople } from 'react-icons/sl';
+import { PiProjectorScreenFill } from 'react-icons/pi';
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   const [activeIcon, setActiveIcon] = useState(""); // Tracks the currently selected icon
 
   const menuItems = [
     { id: "analyze", name: "Analysis", icon: <TbAnalyzeFilled className="text-2xl" />, link: "/dashboard/home" },
+    {id: "EmployeeDetails", name: "EmployeeDetails", icon: <SlPeople className="text-2xl" />, link: "/dashboard/employee"},
     { id: "services", name: "Services", icon: <FcSelfServiceKiosk className="text-2xl" />, link: "/dashboard/services" },
     { id: "testimonials", name: "Testimonials",  icon: <RiFeedbackLine className="text-2xl" />, link: "/dashboard/testimonials" },
     { id: "Team", name: "TeamMember", icon: <RiFeedbackLine className="text-2xl" />, link: "/dashboard/team" },
     { id: "goals", name: "Career", icon: <GoGoal className="text-2xl" />, link: "/dashboard/carrier" },
+    { id: "Assigned", name: "Assigned", icon: <PiProjectorScreenFill className="text-2xl" />, link: "/dashboard/assigned" },
     { id: "portFolio", name: "Portfolio", icon: <MdSlideshow className="text-2xl" />, link: "/dashboard/portFolio" },
   ];
 

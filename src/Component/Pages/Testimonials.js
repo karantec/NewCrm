@@ -10,6 +10,7 @@ const Testimonials = ({ isActive, onClick }) => {
     designation: "",
     message: "",
     profilePicture: "",
+    portfolioLink:"",
     rating: 1,
   });
 
@@ -67,6 +68,7 @@ const Testimonials = ({ isActive, onClick }) => {
         name: "",
         designation: "",
         message: "",
+        portfolioLink:"",
         profilePicture: "",
         rating: 1,
       });
@@ -130,6 +132,22 @@ const Testimonials = ({ isActive, onClick }) => {
               />
               {errors.designation && (
                 <p className="text-red-600 text-sm mt-1">{errors.designation}</p>
+              )}
+            </div>
+            <div className="col-span-1">
+              <label className="block mb-2 text-sm font-bold uppercase text-gray-700">
+              PortfolioLink
+              </label>
+              <input
+                type="text"
+                name="portfolioLink"
+                value={formData.portfolioLink}
+                onChange={handleInputChange}
+                className="w-full p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
+                placeholder="Enter portfolioLink"
+              />
+              {errors.portfolioLink && (
+                <p className="text-red-600 text-sm mt-1">{errors.portfolioLink}</p>
               )}
             </div>
           </div>
