@@ -4,17 +4,9 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Home from '../Pages/Home';
 import TopBar from './Top';
-import Portfolio from '../Pages/Portfolio';
-import ViewPortfolio from '../Pages/ViewPortfolio';
-import Service from '../Pages/Service';
-import Testimonials from '../Pages/Testimonials';
-import Carrier from '../Pages/Carrier';
-import TeamMemberForm from '../Pages/Team';
-import ViewTestimonial from '../Pages/ViewTestimonial';
-import ViewService from '../Pages/ViewServices';
-import Team from '../Pages/Team';
-import EmployeeForm from '../Pages/Employee';
-import AssignedForm from '../Pages/AssignedProject';
+
+import NewsPortfolio from '../Pages/NewsPortfolio';
+import BlogPortFolio from '../Pages/BlogPortFolio';
 
 const Dashboard = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -38,16 +30,10 @@ const Dashboard = () => {
           <Routes>
             <Route path="home" element={<Home />} />
             
-            <Route path="/team" element={<Team/>}/>
-            <Route path="/carrier" element={<Carrier/>}/>
-            <Route path="/view-testimonial" element={<ViewTestimonial />} />
-            <Route path="/testimonials" element={<Testimonials/>}/>
-            <Route path="/view-services" element={<ViewService/>}/>
-            <Route path="/employee" element={<EmployeeForm/>}/>
-            <Route path="/assigned" element={<AssignedForm/>}/>
-            <Route path="/services" element={<Service/>}/>
-            <Route path="/portfolio" element={<Portfolio/>} />
-            <Route path="/view-portfolio" element={<ViewPortfolio />} />
+            <Route path="/News" element={<NewsPortfolio/>}/>
+           
+            <Route path="/blogs" element={<BlogPortFolio/>}/>
+           
             <Route path="*" element={<Navigate to="home" />} />
           </Routes>
         </div>

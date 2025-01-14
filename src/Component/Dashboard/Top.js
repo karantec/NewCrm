@@ -15,7 +15,8 @@ const TopBar = ({ toggleSidebar }) => {
 
       {/* Logo or Title */}
       <h1 className="text-xl font-semibold tracking-wide text-gray-200 hidden lg:block">
-        Renderverse Automation Dashboard 
+        NationNews
+
       </h1>
 
       {/* Actions */}
