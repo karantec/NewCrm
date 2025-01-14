@@ -27,7 +27,7 @@ const TopBar = ({ toggleSidebar }) => {
         <button className="p-2 bg-gray-700 rounded-full text-sm font-medium text-white hover:bg-gray-600 transition duration-300 ease-in-out">
           <FaUser className="w-5 h-5" />
         </button>
-        <Link to="/login"><button className="p-2 bg-red-600 rounded-full text-sm font-medium text-white hover:bg-red-500 transition duration-300 ease-in-out">
+        <Link to="/"><button className="p-2 bg-red-600 rounded-full text-sm font-medium text-white hover:bg-red-500 transition duration-300 ease-in-out">
           <FaSignOutAlt className="w-5 h-5" />
         </button></Link>
       </div>

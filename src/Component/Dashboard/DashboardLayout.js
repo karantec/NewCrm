@@ -4,12 +4,12 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import Home from '../Pages/Home';
 import TopBar from './Top';
-
 import NewsPortfolio from '../Pages/NewsPortfolio';
 import BlogPortFolio from '../Pages/BlogPortFolio';
 
+
 const Dashboard = () => {
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isSidebarOpen, setSidebarOpen] = useState(true);
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
@@ -30,10 +30,9 @@ const Dashboard = () => {
           <Routes>
             <Route path="home" element={<Home />} />
             
-            <Route path="/News" element={<NewsPortfolio/>}/>
-           
+            <Route path="/news" element={<NewsPortfolio/>}/>
             <Route path="/blogs" element={<BlogPortFolio/>}/>
-           
+          
             <Route path="*" element={<Navigate to="home" />} />
           </Routes>
         </div>

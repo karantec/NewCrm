@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
@@ -16,7 +16,6 @@ const Login = () => {
 
     // Validate credentials
     if (email === validEmail && password === validPassword) {
-      localStorage.setItem("isAuthenticated", "true"); // Set authentication state
       navigate("/dashboard/home"); // Navigate to dashboard home
     } else {
       setError("Invalid email or password. Please try again.");
